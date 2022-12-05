@@ -63,7 +63,7 @@ ABOUT_TEXT = """
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Support📕', url=f"https://telegram.me/{Config.SUPPORT}"), 
+        InlineKeyboardButton('Support📕', url=f"https://t.me/Maathasad1999/:{Config.SUPPORT}"), 
         InlineKeyboardButton(text="SEARCH🔎", switch_inline_query_current_chat="")
         ],[
         InlineKeyboardButton('HELP & USAGE⚙️', callback_data ='cmds') 
@@ -187,7 +187,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[@mwkBoTs]" 
+            performer = f"[@Maathasad1999]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
